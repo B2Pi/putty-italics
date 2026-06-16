@@ -48,5 +48,8 @@ Place the patch file within reach, and run something to the effect of:
 patch -p1 < italics-0.70.patch
 ```
 
-Then, build PuTTY as normal.  You'll need to build the Makefiles/project files
-with `mkfiles.pl` and finally build.
+Then, build PuTTY as normal.
+```sh
+cmake . && cmake --build .
+```
+
